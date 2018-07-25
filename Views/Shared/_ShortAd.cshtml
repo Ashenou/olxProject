@@ -1,0 +1,35 @@
+﻿@model olxProject.Models.Ad
+
+<div>
+    
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+          Price:
+        </dt>
+
+        <dd>
+            <h3 >@Html.DisplayFor(model => model.Price_Salary)</h3>
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PublishDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PublishDate)
+        </dd>
+        <dd>
+             @Html.ActionLink("MoreDetails", "ViewDetails", "Home", new { id = Model.AdId }, null)
+        </dd>
+    </dl>
+
+</div>
+

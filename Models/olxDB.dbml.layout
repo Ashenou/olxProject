@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.125" name="olxDB">
+  <DataContextMoniker Name="/olxDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2754ebd3-43f8-4c6f-b52c-12cc6047ec65" absoluteBounds="3.5, 1, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/olxDBDataContext/Ad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6920ea45-a5cd-4694-b3e6-83b1250a6081" absoluteBounds="3.515, 1.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4919cfd9-044b-4891-ab4f-ddf0ae16cd9c" absoluteBounds="0.75, 4.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/olxDBDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59946323-5947-4728-a44f-28adc54aef11" absoluteBounds="0.765, 5.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8b6c8445-1481-4e22-b9c9-e50f87d456cf" absoluteBounds="3.5, 4.625, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/olxDBDataContext/CategoryDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90c748a6-2e58-45da-bdf6-fddabaf06c9f" absoluteBounds="3.515, 5.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38ba41c0-9cac-4205-a901-b4f852f7addd" absoluteBounds="8.125, 4.125, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/olxDBDataContext/Image" />
+      <nestedChildShapes>
+        <elementListCompartment Id="877944ff-d80a-4e6f-916e-e02ac2a761d0" absoluteBounds="8.14, 4.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba5ec4f1-3fef-4358-b22c-6976557492c7" absoluteBounds="0.75, 2.25, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/olxDBDataContext/Location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2d0351b4-a403-4c45-8ffd-18d548f7f4b6" absoluteBounds="0.765, 2.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2cd08fb0-8b7b-4cdb-9a87-34c0d65a7964" absoluteBounds="8.125, 6.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/olxDBDataContext/Message" />
+      <nestedChildShapes>
+        <elementListCompartment Id="65373fb2-d83a-4ed6-98b0-3eac658eb930" absoluteBounds="8.14, 6.5850000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 4.75091745577925); (3.125 : 4.37591745577925); (3.125 : 2.36620198567708); (3.5 : 2.36620198567708)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/olxDBDataContext/Category/Category_Ad" />
+      <nodes>
+        <classShapeMoniker Id="4919cfd9-044b-4891-ab4f-ddf0ae16cd9c" />
+        <classShapeMoniker Id="2754ebd3-43f8-4c6f-b52c-12cc6047ec65" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.37870748440004); (3.22916666666667 : 5.37870748440004 : JumpStart); (3.39583333333333 : 5.37870748440004 : JumpEnd); (3.5 : 5.37870748440004)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/olxDBDataContext/Category/Category_CategoryDetail" />
+      <nodes>
+        <classShapeMoniker Id="4919cfd9-044b-4891-ab4f-ddf0ae16cd9c" />
+        <classShapeMoniker Id="8b6c8445-1481-4e22-b9c9-e50f87d456cf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.71875); (9.59375 : 1.71875); (9.59375 : 4.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/olxDBDataContext/Ad/Ad_Image" />
+      <nodes>
+        <classShapeMoniker Id="2754ebd3-43f8-4c6f-b52c-12cc6047ec65" />
+        <classShapeMoniker Id="38ba41c0-9cac-4205-a901-b4f852f7addd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.96759724934896); (3.04166666666667 : 2.96759724934896 : JumpStart); (3.20833333333333 : 2.96759724934896 : JumpEnd); (3.5 : 2.96759724934896)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/olxDBDataContext/Location/Location_Ad" />
+      <nodes>
+        <classShapeMoniker Id="ba5ec4f1-3fef-4358-b22c-6976557492c7" />
+        <classShapeMoniker Id="2754ebd3-43f8-4c6f-b52c-12cc6047ec65" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 3.73086450981571); (5.875 : 4.1058645098157); (5.875 : 6.91429768880208); (8.125 : 6.91429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/olxDBDataContext/Ad/Ad_Message" />
+      <nodes>
+        <classShapeMoniker Id="2754ebd3-43f8-4c6f-b52c-12cc6047ec65" />
+        <classShapeMoniker Id="2cd08fb0-8b7b-4cdb-9a87-34c0d65a7964" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="646b5528-6166-4894-b79c-f46a463cd640" absoluteBounds="7, 2.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/olxDBDataContext/AdsCategoryDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ca764de-f61c-4204-9bb0-fd8b175ba925" absoluteBounds="7.015, 2.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 3.08417975490786); (7 : 3.08417975490786)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/olxDBDataContext/Ad/Ad_AdsCategoryDetail" />
+      <nodes>
+        <classShapeMoniker Id="2754ebd3-43f8-4c6f-b52c-12cc6047ec65" />
+        <classShapeMoniker Id="646b5528-6166-4894-b79c-f46a463cd640" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.7925439453125); (5.79166666666667 : 5.7925439453125 : JumpStart); (5.95833333333333 : 5.7925439453125 : JumpEnd); (7.53125 : 5.7925439453125); (7.53125 : 4.07859537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/olxDBDataContext/CategoryDetail/CategoryDetail_AdsCategoryDetail" />
+      <nodes>
+        <classShapeMoniker Id="8b6c8445-1481-4e22-b9c9-e50f87d456cf" />
+        <classShapeMoniker Id="646b5528-6166-4894-b79c-f46a463cd640" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="891df16a-071f-4124-bf0d-ddfab1b649e3" absoluteBounds="0.75, 8.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/olxDBDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea05b2c0-447f-4495-a274-38bd18de2dfc" absoluteBounds="0.765, 8.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0392d7c8-c5a6-4fad-ad8e-0b8773090021" absoluteBounds="3.5, 7.875, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/olxDBDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29808a1f-74e7-4070-878a-82800e5aa85d" absoluteBounds="3.515, 8.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5634254047476 : 7.875); (3.3125 : 7.6240745952524); (3.3125 : 3.91990397135417); (3.5 : 3.73240397135417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/olxDBDataContext/User/User_Ad" />
+      <nodes>
+        <classShapeMoniker Id="0392d7c8-c5a6-4fad-ad8e-0b8773090021" />
+        <classShapeMoniker Id="2754ebd3-43f8-4c6f-b52c-12cc6047ec65" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.84699625651042); (3.5 : 8.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/olxDBDataContext/Role/Role_User" />
+      <nodes>
+        <classShapeMoniker Id="891df16a-071f-4124-bf0d-ddfab1b649e3" />
+        <classShapeMoniker Id="0392d7c8-c5a6-4fad-ad8e-0b8773090021" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

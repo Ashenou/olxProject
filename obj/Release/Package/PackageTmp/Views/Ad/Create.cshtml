@@ -1,0 +1,55 @@
+﻿@using olxProject.Models
+@model olxProject.Models.Ad
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+       
+        <hr />
+       <label for="Title">Title</label>
+        <input type="text" name="Title" />
+        <br />
+        <label for="Description">Description</label>
+        <input type="text" name="Description" />
+        <br />
+        <label for="Price_Salary">Price/Salary</label>
+        <input type="text" name="Price_Salary" />
+        <br />
+        <label for="LocationId" >Location</label>
+        @Html.DropDownList("LocationId",(SelectList)ViewBag.Locations)
+        <br />
+        @{
+            var CatDetails = (List<CategoryDetail>)ViewBag.CatDetails;
+            for (int i = 0; i < CatDetails.Count; i++)
+            {
+                <input type="hidden" name="_@CatDetails[i].DetailName" value="@CatDetails[i].DetailId" />
+                <br />
+                <label for="@CatDetails[i].DetailName">@CatDetails[i].DetailName</label>
+                <br />
+                <input type="text" name="@CatDetails[i].DetailName" />
+                <br />
+            }
+}
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default"/>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

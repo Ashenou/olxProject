@@ -1,0 +1,101 @@
+﻿@model olxProject.Models.Ad
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Ad</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.AdId)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Title, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("Title", Model.Title, new {@readonly=true })
+                @Html.ValidationMessageFor(model => model.Title)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("Description", Model.Description, new { @readonly = true })
+                @Html.ValidationMessageFor(model => model.Description)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Price_Salary, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("Price_Salary", Model.Price_Salary, new { @readonly = true })
+                @Html.ValidationMessageFor(model => model.Price_Salary)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LocationId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("LocationName", Model.Location.LocationName, new { @readonly = true })
+                @Html.ValidationMessageFor(model => model.LocationId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.UserId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("UserName", Model.User.UserName, new { @readonly = true })
+                @Html.ValidationMessageFor(model => model.UserId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PublishDate, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("PublishDate", Model.PublishDate.ToShortDateString(), new { @readonly = true })
+                @Html.ValidationMessageFor(model => model.PublishDate)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IsApproved, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IsApproved)
+                @Html.ValidationMessageFor(model => model.IsApproved)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CatId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("CatName", Model.Category.CatName, new { @readonly = true })
+                @Html.ValidationMessageFor(model => model.CatId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ViewsCount, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("ViewsCount", Model.ViewsCount, new { @readonly = true })
+                @Html.ValidationMessageFor(model => model.ViewsCount)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

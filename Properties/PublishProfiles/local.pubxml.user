@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\IIS Sites\ElearningProject</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/olxProject.dll">
+      <publishTime>07/11/2017 07:57:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>04/10/2016 16:03:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>04/10/2016 16:03:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>04/10/2016 16:03:22</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>04/10/2016 16:03:25</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>04/10/2016 16:03:25</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>04/10/2016 16:03:25</publishTime>
+    </File>
+    <File Include="contact.html">
+      <publishTime>01/03/2017 12:12:44</publishTime>
+    </File>
+    <File Include="css/bootstrap.css">
+      <publishTime>01/03/2017 10:36:38</publishTime>
+    </File>
+    <File Include="css/component.css">
+      <publishTime>01/03/2017 10:36:36</publishTime>
+    </File>
+    <File Include="css/flexslider.css">
+      <publishTime>01/03/2017 10:36:38</publishTime>
+    </File>
+    <File Include="css/megamenu.css">
+      <publishTime>01/03/2017 10:36:38</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>01/03/2017 10:36:38</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/10/2016 16:03:05</publishTime>
+    </File>
+    <File Include="images/2nd-day.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/3.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/arrow2.gif">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/bag.png">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/car.jpg">
+      <publishTime>01/03/2017 12:07:49</publishTime>
+    </File>
+    <File Include="images/close_1.png">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/compare.png">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/g-star-raw.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/g1.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/g2.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/g3.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/g4.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/g5.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/g6.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/g7.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/g8.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/grid_view.png">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/img-sprite.png">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/list_view.png">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/m1.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/m2.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/m3.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/m4.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/m5.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/m6.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/mih-jeans.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/mobile.jpg">
+      <publishTime>01/03/2017 12:07:59</publishTime>
+    </File>
+    <File Include="images/p1.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/p2.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/p3.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/s1.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/s2.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/s3.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/s4.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/search.png">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/tick1.png">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/w1.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/w2.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/w3.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/weekday1.jpg">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="images/wishlist.png">
+      <publishTime>01/03/2017 11:03:41</publishTime>
+    </File>
+    <File Include="Index-ready.html">
+      <publishTime>01/03/2017 12:05:11</publishTime>
+    </File>
+    <File Include="js/cbpViewModeSwitch.js">
+      <publishTime>01/03/2017 10:36:23</publishTime>
+    </File>
+    <File Include="js/classie.js">
+      <publishTime>01/03/2017 10:36:23</publishTime>
+    </File>
+    <File Include="js/classie1.js">
+      <publishTime>01/03/2017 10:36:23</publishTime>
+    </File>
+    <File Include="js/easyResponsiveTabs.js">
+      <publishTime>01/03/2017 10:36:23</publishTime>
+    </File>
+    <File Include="js/jquery-1.11.1.min.js">
+      <publishTime>01/03/2017 10:36:23</publishTime>
+    </File>
+    <File Include="js/jquery.easydropdown.js">
+      <publishTime>01/03/2017 10:36:23</publishTime>
+    </File>
+    <File Include="js/jquery.flexslider.js">
+      <publishTime>01/03/2017 10:36:23</publishTime>
+    </File>
+    <File Include="js/megamenu.js">
+      <publishTime>01/03/2017 10:36:23</publishTime>
+    </File>
+    <File Include="js/simpleCart.min.js">
+      <publishTime>01/03/2017 10:36:23</publishTime>
+    </File>
+    <File Include="js/uisearch.js">
+      <publishTime>01/03/2017 10:36:23</publishTime>
+    </File>
+    <File Include="Models/olxDB.dbml">
+      <publishTime>04/13/2016 20:07:20</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>08/11/2016 04:14:49</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>04/10/2016 16:03:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>04/10/2016 16:03:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>04/10/2016 16:03:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>04/10/2016 16:03:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>04/10/2016 16:03:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>04/10/2016 16:03:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>04/10/2016 16:03:11</publishTime>
+    </File>
+    <File Include="Views/Ad/ChooseCategory.cshtml">
+      <publishTime>04/10/2016 18:42:40</publishTime>
+    </File>
+    <File Include="Views/Ad/Create.cshtml">
+      <publishTime>07/10/2017 18:37:37</publishTime>
+    </File>
+    <File Include="Views/Admin/Edit.cshtml">
+      <publishTime>04/13/2016 19:48:32</publishTime>
+    </File>
+    <File Include="Views/Admin/Index.cshtml">
+      <publishTime>01/02/2017 23:17:34</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>07/10/2017 18:07:46</publishTime>
+    </File>
+    <File Include="Views/Home/login.cshtml">
+      <publishTime>01/03/2017 13:12:26</publishTime>
+    </File>
+    <File Include="Views/Home/ViewDetails.cshtml">
+      <publishTime>07/10/2017 18:14:15</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>07/10/2017 18:21:07</publishTime>
+    </File>
+    <File Include="Views/Shared/_OneAd.cshtml">
+      <publishTime>07/10/2017 18:27:55</publishTime>
+    </File>
+    <File Include="Views/Shared/_ShortAd.cshtml">
+      <publishTime>07/10/2017 18:23:52</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>04/10/2016 16:03:13</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>04/10/2016 16:03:13</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/11/2017 08:06:57</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

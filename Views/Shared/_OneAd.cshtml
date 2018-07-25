@@ -1,0 +1,31 @@
+﻿@using olxProject.Models;
+@model olxProject.Models.Ad
+<img src="@Url.Content(ViewBag.ImgUrl)" style="float:right" />
+<h2 style="font-family:Tahoma">Category : @Model.Category.CatName</h2>
+<h3 style="font-family:Tahoma">Publish Date : @Model.PublishDate.ToShortDateString()</h3>
+<h4 style="font-family:Tahoma">User Name : @Model.User.UserName</h4>
+<h4 style="font-family:Tahoma">Mobile : @Model.User.Mobile</h4>
+<h4 style="font-family:Tahoma">Location : @Model.Location.LocationName</h4>
+<h4 style="font-family:Tahoma">Views : @Model.ViewsCount</h4>
+<table>
+    <tr>
+        <td><h2>Title : @Model.Title</h2></td>
+    </tr>
+    <tr><td><h3>Price : @Model.Price_Salary</h3></td></tr>
+    <tr>
+        <td>Description:@Model.Description  </td>
+    </tr>
+    @{
+        List<AdsCategoryDetail> MyDetail=ViewBag.AdDetails;
+
+        foreach (var item in MyDetail)
+        {
+            <tr>
+                <td>@item.CategoryDetail.DetailName </td>
+                <td>@item.Value </td>
+            </tr>
+        }
+    }
+
+
+</table>

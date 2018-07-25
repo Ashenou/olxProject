@@ -1,0 +1,16 @@
+﻿
+@model IEnumerable<olxProject.Models.Ad>
+
+
+<h2 style="font-family:Tahoma;color:#0094ff">List of Advertisements</h2>
+@*<p>
+    @Html.ActionLink("Create New Ad", "Create","Ad")
+    @Html.ActionLink("Create New ad", "ChooseCategory", "Ad")
+    @Html.ActionLink("Login","login")
+    @Html.ActionLink("Logout", "Logout")
+</p>*@
+
+@foreach (var item in Model)
+{
+    @Html.Partial("_ShortAd", item);
+}

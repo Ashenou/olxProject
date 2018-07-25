@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "ChooseCategory";
+}
+
+<h2>ChooseCategory</h2>
+
+@using (Html.BeginForm())
+{
+     <label for="id">Choose Category</label>
+    @Html.DropDownList("id",(SelectList)ViewBag.Categories)
+    
+    <br />
+    <input type="submit" value="Continue" />
+}
